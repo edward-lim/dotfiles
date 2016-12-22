@@ -2,18 +2,19 @@ filetype plugin indent on
 
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'flazz/vim-colorschemes'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'fatih/vim-go'
 Plug 'mhinz/vim-grepper'
 Plug 'leafgarland/typescript-vim'
 Plug 'jason0x43/vim-js-indent'
 Plug 'scrooloose/nerdtree'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 call plug#end()
 
 set backspace=indent,eol,start
 syntax on
 set nu
 
+set clipboard+=unnamedplus
 
 " Go stuff
 let g:go_fmt_command = "goimports"
@@ -38,3 +39,5 @@ autocmd FileType html set shiftwidth=2 tabstop=2 expandtab softtabstop=2
 autocmd FileType typescript set shiftwidth=2 tabstop=2 expandtab softtabstop=2
 autocmd FileType javascript set shiftwidth=2 tabstop=2 expandtab softtabstop=2
 autocmd FileType css set shiftwidth=2 tabstop=2 expandtab softtabstop=2
+
+map <C-f> :FZF<CR>
