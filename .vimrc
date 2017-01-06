@@ -42,4 +42,5 @@ autocmd FileType css set shiftwidth=2 tabstop=2 expandtab softtabstop=2
 
 map <C-f> :FZF<CR>
 
+" set listchars=trail:∙,tab:\|\
 set list
