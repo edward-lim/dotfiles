@@ -40,7 +40,7 @@ autocmd FileType typescript set shiftwidth=2 tabstop=2 expandtab softtabstop=2
 autocmd FileType javascript set shiftwidth=2 tabstop=2 expandtab softtabstop=2
 autocmd FileType css set shiftwidth=2 tabstop=2 expandtab softtabstop=2
 
-map <C-f> :FZF<CR>
+map <C-p> :FZF<CR>
 
 set listchars=trail:∙,tab:\|\
 set list
