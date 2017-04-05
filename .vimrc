@@ -11,6 +11,9 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'SirVer/ultisnips'
 Plug 'zchee/deoplete-jedi'
+Plug 'mattn/emmet-vim'
+Plug 'valloric/MatchTagAlways'
+Plug 'alvan/vim-closetag'
 call plug#end()
 
 set backspace=indent,eol,start
