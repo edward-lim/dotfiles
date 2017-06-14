@@ -40,7 +40,7 @@ let g:js_indent_typescript = 1
 
 colorscheme molokai
 
-autocmd FileType python set tabstop=4 shiftwidth=4 hlsearch expandtab autoindent
+autocmd FileType python set softtabstop=4 tabstop=4 shiftwidth=4 hlsearch expandtab autoindent
 autocmd FileType proto set tabstop=4 shiftwidth=4 hlsearch expandtab autoindent
 autocmd FileType ruby set tabstop=4 shiftwidth=4 hlsearch expandtab autoindent
 autocmd FileType html set shiftwidth=2 tabstop=2 expandtab softtabstop=2
