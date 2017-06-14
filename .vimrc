@@ -61,18 +61,17 @@ set list
 set ignorecase
 set smartcase
 
+" Use deoplete.
 let g:deoplete#enable_at_startup = 1
+" map autocomplete to control + space
+inoremap <silent><expr><C-Space> deoplete#mappings#manual_complete()
 " disable autocomplete
 let g:deoplete#disable_auto_complete = 1
-" map autocomplete to control + space
-if has("gui_running")
-    inoremap <silent><expr><C-Space> deoplete#mappings#manual_complete()
-else
-    inoremap <silent><expr><C-@> deoplete#mappings#manual_complete()
-endif
 
 " UltiSnips config
 inoremap <silent><expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+set pastetoggle=<F3>
