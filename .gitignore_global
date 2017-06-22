@@ -1,0 +1,6 @@
+.hypothesis*
+.ropeproject
+*.swp
+.tox/
+.java-version
+_trial_temp/
