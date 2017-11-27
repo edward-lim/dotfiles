@@ -4,3 +4,9 @@
 .tox/
 .java-version
 _trial_temp/
+.classpath
+.project
+.settings/
+deploy/
+bin/.gitignore
+*.pyc
