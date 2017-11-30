@@ -19,6 +19,7 @@ call plug#end()
 set backspace=indent,eol,start
 syntax on
 set nu
+set relativenumber
 
 set clipboard+=unnamedplus
 
