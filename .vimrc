@@ -41,7 +41,11 @@ let g:js_indent_typescript = 1
 
 colorscheme molokai
 
+autocmd BufNewFile,BufRead *.md set filetype=markdown
+
 autocmd FileType python set softtabstop=4 tabstop=4 shiftwidth=4 hlsearch expandtab autoindent
+autocmd FileType groovy set softtabstop=4 tabstop=4 shiftwidth=4 hlsearch expandtab autoindent
+autocmd FileType markdown set softtabstop=4 tabstop=4 shiftwidth=4 hlsearch expandtab autoindent
 autocmd FileType proto set tabstop=4 shiftwidth=4 hlsearch expandtab autoindent
 autocmd FileType ruby set tabstop=4 shiftwidth=4 hlsearch expandtab autoindent
 autocmd FileType html set shiftwidth=2 tabstop=2 expandtab softtabstop=2
@@ -76,3 +80,4 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 set pastetoggle=<F3>
+au BufNewFile,BufRead Jenkinsfile setf groovy
