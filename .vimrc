@@ -28,7 +28,7 @@ let g:go_fmt_command = "goimports"
 
 " PyLint configuration file
 let g:pymode_lint_config = '$HOME/.pylint.rc'
-autocmd FileType python set colorcolumn=120
+autocmd FileType python set colorcolumn=72,120
 
 let g:pymode_lint_options_pep8 = {
         \ 'max_line_length': 120,

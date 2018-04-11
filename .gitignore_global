@@ -10,3 +10,4 @@ _trial_temp/
 deploy/
 bin/.gitignore
 *.pyc
+.DS_Store
