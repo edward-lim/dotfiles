@@ -82,4 +82,4 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 set pastetoggle=<F3>
 au BufNewFile,BufRead Jenkinsfile setf groovy
 
-cnoremap gg :Grepper -tool git
+cnoreabbrev gg :Grepper -tool git
