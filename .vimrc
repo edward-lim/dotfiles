@@ -1,3 +1,5 @@
+let g:python3_host_prog='/Users/edwardlim/.virtualenvs/neovim/bin/python'
+
 filetype plugin indent on
 
 call plug#begin('~/.local/share/nvim/plugged')
@@ -66,12 +68,18 @@ set list
 set ignorecase
 set smartcase
 
+" Play with hiding files as a buffer when jumping around
+set hidden
+
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
 " map autocomplete to control + space
 inoremap <silent><expr><C-Space> deoplete#mappings#manual_complete()
 " disable autocomplete
 let g:deoplete#disable_auto_complete = 1
+
+" auto-close scratch pad when deoplete opens a scrach pad
+autocmd CompleteDone * pclose!
 
 " UltiSnips config
 inoremap <silent><expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
