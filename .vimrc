@@ -1,4 +1,4 @@
-let g:python3_host_prog='/Users/edwardlim/Documents/dev/python_envs/neovim/bin/python'
+let g:python3_host_prog=$HOME . '/Documents/dev/.virtualenvs/neovim/bin/python'
 
 filetype plugin indent on
 
