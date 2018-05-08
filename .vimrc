@@ -74,9 +74,9 @@ set hidden
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
 " map autocomplete to control + space
-inoremap <silent><expr><C-Space> deoplete#mappings#manual_complete()
+" inoremap <silent><expr><C-Space> deoplete#mappings#manual_complete()
 " disable autocomplete
-let g:deoplete#disable_auto_complete = 1
+" let g:deoplete#disable_auto_complete = 1
 
 " auto-close scratch pad when deoplete opens a scrach pad
 autocmd CompleteDone * pclose!
