@@ -1,11 +1,12 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/Eddo/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="powerline"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir virtualenv vcs)
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
