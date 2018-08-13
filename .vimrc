@@ -16,6 +16,7 @@ Plug 'zchee/deoplete-jedi'
 Plug 'mattn/emmet-vim'
 Plug 'valloric/MatchTagAlways'
 Plug 'alvan/vim-closetag'
+Plug 'ntpeters/vim-better-whitespace'
 call plug#end()
 
 set backspace=indent,eol,start
@@ -62,8 +63,12 @@ map <C-p> :FZF<CR>
 map <C-n> :NERDTreeToggle<CR>
 
 " show trailing characters
-set listchars=trail:∙,tab:\|\
-set list
+set list listchars=trail:∙,tab:\|\
+let python_space_errors = 1
+
+" highlight ExtraWhitespace ctermbg=red guibg=red
+" match ExtraWhitespace /\s\+$/
+" set list lcs=tab:\|\ trail:∙
 
 set ignorecase
 set smartcase
