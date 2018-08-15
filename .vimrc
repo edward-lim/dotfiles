@@ -63,7 +63,7 @@ map <C-p> :FZF<CR>
 map <C-n> :NERDTreeToggle<CR>
 
 " show trailing characters
-set list listchars=trail:∙,tab:\|\
+set list listchars=trail:∙,tab:\|\ 
 let python_space_errors = 1
 
 " highlight ExtraWhitespace ctermbg=red guibg=red
