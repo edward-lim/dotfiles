@@ -89,3 +89,5 @@ source ~/.zsh/aliases.zsh
 source ~/.zsh/pre-oh-my-zsh.zsh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
