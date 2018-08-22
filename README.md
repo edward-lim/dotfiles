@@ -3,8 +3,8 @@
 ```
 
 https://github.com/robbyrussell/oh-my-zsh
+https://github.com/bhilburn/powerlevel9k/wiki/Install-Instructions#step-1-install-powerlevel9k
 https://github.com/powerline/fonts
-
 
 brew install neovim
 brew install python
