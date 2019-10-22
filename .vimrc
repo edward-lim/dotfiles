@@ -76,6 +76,9 @@ set smartcase
 " Play with hiding files as a buffer when jumping around
 set hidden
 
+" Fix matching parentheses cursor
+hi MatchParen      ctermfg=208  ctermbg=233 cterm=bold
+
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
 " map autocomplete to control + space
